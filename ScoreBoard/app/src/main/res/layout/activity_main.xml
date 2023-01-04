@@ -4,19 +4,138 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Score"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#FFA7A7"
+            android:gravity="center"
+            android:background="@drawable/scoreboard"/>
+        <TextView
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Board"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#B2CCFF"
+            android:gravity="center"
+            android:background="@drawable/scoreboard_right"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Score Board"
-        android:textSize="40dp"/>
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#D9D9D9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#FFF3D6"/>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#FFF3D6"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/start_button"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#FFF3D6"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#FFF3D6"/>
+
+
+    </LinearLayout>
+
+
 
 
 
