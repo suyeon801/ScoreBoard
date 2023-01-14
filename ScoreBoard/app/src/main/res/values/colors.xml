@@ -2,9 +2,8 @@
 <resources>
     <color name="blue">#5F75B0</color>
     <color name="brown">#B09E71</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="yellow">#FFF3D6</color>
+    <color name="cloud">#B2CCFF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
