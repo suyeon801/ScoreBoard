@@ -92,12 +92,12 @@
                 android:layout_width="100dp"
                 android:layout_height="150dp"
                 android:text="Score"
-                android:textColor="@color/black"
+                android:textColor="#8C8C8C"
                 android:textCursorDrawable="@color/black"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/shirt"
-                android:backgroundTint="@color/yellow"/>
+                android:backgroundTint="@color/dark_yellow"/>
 
             <EditText
                 android:layout_marginRight="20dp"
@@ -113,11 +113,16 @@
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
 
-
+    <Button
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@drawable/brown_button"/>
 
 </LinearLayout>
