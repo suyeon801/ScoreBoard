@@ -12,15 +12,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
         android:background="@drawable/brown_rec"
         android:drawableLeft="@drawable/crown"
         android:drawableTint="@color/black"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="  Score Board"
+        android:text="  Score Board Write"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -34,16 +34,13 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="350dp"
         android:orientation="vertical"
         android:background="@drawable/brown_rec">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_margin="20dp"
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
     </LinearLayout>
+
+
 
 </LinearLayout>

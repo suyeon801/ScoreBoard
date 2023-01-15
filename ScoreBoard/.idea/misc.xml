@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.367" />
+        <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/brow_rec_20.xml" value="0.3265" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/brown_rec.xml" value="0.3265" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/game_main.xml" value="0.3195" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/ic_launcher_background.xml" value="0.367" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_rank.xml" value="0.22" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_score_board.xml" value="0.33" />
+        <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_score_board_write.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
