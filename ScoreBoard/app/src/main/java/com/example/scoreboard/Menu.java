@@ -22,5 +22,14 @@ public class Menu extends AppCompatActivity {
                 startActivity(userIntent);
             }
         });
+
+        Button rank = (Button) findViewById(R.id.rank);
+        rank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent rankIntent = new Intent(getApplicationContext(), Rank.class);
+                startActivity(rankIntent);
+            }
+        });
     }
 }
