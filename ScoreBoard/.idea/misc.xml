@@ -11,6 +11,8 @@
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/brown_button.xml" value="0.3265" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/brown_rec.xml" value="0.3265" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/game_main.xml" value="0.3195" />
+        <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/gray_rec.xml" value="0.363" />
+        <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/gray_rec_30.xml" value="0.363" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/ic_launcher_background.xml" value="0.367" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/menu.xml" value="0.307" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/drawable/rank_button.xml" value="0.366" />
@@ -26,6 +28,7 @@
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_score_board.xml" value="0.33" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_score_board_write.xml" value="0.33" />
         <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_user_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/DS/Desktop/ScoreBoard/ScoreBoard/app/src/main/res/layout/activity_user_list_write.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
