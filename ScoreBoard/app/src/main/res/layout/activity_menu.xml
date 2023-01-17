@@ -168,8 +168,6 @@
                 android:textColor="@color/white"
                 android:background="@drawable/brown_button"/>
 
-
-
         </LinearLayout>
 
 
