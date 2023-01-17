@@ -81,8 +81,8 @@
             android:id="@+id/rank"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/rank_button"
             android:drawableLeft="@drawable/crown"
             android:paddingLeft="20dp"
@@ -99,8 +99,8 @@
             android:id="@+id/user_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/rank_button"
             android:backgroundTint="#FCEABB"
             android:drawableLeft="@drawable/user"
@@ -118,56 +118,68 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:background="#FFFFFF"/>
 
     <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:background="@drawable/menu">
 
-        <View
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:background="#FFFFFF"/>
-
+            android:layout_height="wrap_content"
+            android:text="Game List"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"/>
 
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:orientation="vertical"
-            android:background="@drawable/menu">
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/brown_rec">
 
-            <TextView
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Game List"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:gravity="center"/>
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Game Name"
+                android:textSize="15dp"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_margin="10dp"
-                android:id="@+id/recyclerView_GameList"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="add"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:background="@drawable/brown_button"/>
+
+
 
         </LinearLayout>
 
 
 
-        <View
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/recyclerView_GameList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="10"
-            android:background="#FFFFFF"/>
-
-
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
@@ -175,13 +187,5 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:background="#FFFFFF"/>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="#FFFFFF"/>
-
-
 
 </LinearLayout>
