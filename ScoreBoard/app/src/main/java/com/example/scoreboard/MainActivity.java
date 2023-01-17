@@ -11,8 +11,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +25,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        //recyclerView LayoutManager
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
-        GameAdapter adapter = new GameAdapter(getApplicationContext());
-
-        adapter.addItem(new GameItem("Baseball"));
-        adapter.addItem(new GameItem("Soccer"));
-        adapter.addItem(new GameItem("Basketball"));
-
-        recyclerView.setAdapter(adapter);
 
     }
 }

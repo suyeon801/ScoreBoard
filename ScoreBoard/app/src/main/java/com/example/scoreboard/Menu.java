@@ -1,6 +1,8 @@
 package com.example.scoreboard;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class Menu extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    GameAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +36,19 @@ public class Menu extends AppCompatActivity {
                 startActivity(rankIntent);
             }
         });
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView_GameList);
+        //recyclerView LayoutManager
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new GameAdapter(getApplicationContext());
+
+        adapter.addItem(new GameItem("Baseball"));
+        adapter.addItem(new GameItem("Soccer"));
+        adapter.addItem(new GameItem("Basketball"));
+
+        recyclerView.setAdapter(adapter);
+
     }
 }

@@ -33,11 +33,17 @@
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Game Name"
+                android:text="Game List"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="20dp"
+                android:id="@+id/recyclerView_GameList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
 
