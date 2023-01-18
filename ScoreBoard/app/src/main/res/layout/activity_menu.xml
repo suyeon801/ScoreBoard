@@ -150,6 +150,7 @@
             android:background="@drawable/brown_rec">
 
             <EditText
+                android:id="@+id/newgame_add"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_width="180dp"
@@ -158,6 +159,7 @@
                 android:textSize="15dp"/>
 
             <Button
+                android:id="@+id/newgame_addButton"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="10dp"

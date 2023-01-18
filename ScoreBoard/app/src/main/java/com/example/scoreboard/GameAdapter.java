@@ -28,7 +28,6 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemView = inflater.inflate(R.layout.activity_game_list, parent, false);
-
         return new ViewHolder(itemView);
     }
 
