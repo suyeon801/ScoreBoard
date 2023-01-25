@@ -67,7 +67,6 @@ public class UserList extends AppCompatActivity {
 
                             // Recyclerview에 추가
                             userAdapter.addItem(new UserItem("#0", userName, userBirth, userGender));
-                            userAdapter.notifyDataSetChanged();
                             recyclerView.setAdapter(userAdapter);
                             userAdapter.notifyDataSetChanged();
                         }
