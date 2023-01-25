@@ -39,5 +39,6 @@ public class UserList extends AppCompatActivity {
         userAdapter.addItem(new UserItem("#4", "222", "2000-11-08", "Female"));
 
         recyclerView.setAdapter(userAdapter);
+        userAdapter.notifyDataSetChanged();
     }
 }
