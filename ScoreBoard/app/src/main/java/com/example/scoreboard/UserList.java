@@ -35,7 +35,7 @@ public class UserList extends AppCompatActivity {
         });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewUser);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
         userAdapter = new UserAdapter(getApplicationContext());
@@ -47,7 +47,8 @@ public class UserList extends AppCompatActivity {
         userAdapter.addItem(new UserItem("#4", "222", "2000-11-08", "Female"));
 
         recyclerView.setAdapter(userAdapter);
-        userAdapter.notifyDataSetChanged();
+
+
     }
     ActivityResultLauncher<Intent> startActivityResult = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -56,8 +57,21 @@ public class UserList extends AppCompatActivity {
                 public void onActivityResult(ActivityResult result) {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         //다른 액티비티를 다녀와서 실행할 작업 작성
-                        userAdapter.notifyDataSetChanged();
+                        if (result != null) {
+                            Intent intent = result.getData();
+
+                            //String userId = intent.getStringExtra("userId");
+                            String userName = intent.getStringExtra("user_name");
+                            String userBirth = intent.getStringExtra("user_birth");
+                            String userGender = intent.getStringExtra("user_gender");
+
+                            // Recyclerview에 추가
+                            userAdapter.addItem(new UserItem("#0", userName, userBirth, userGender));
+                            userAdapter.notifyDataSetChanged();
+                            recyclerView.setAdapter(userAdapter);
+                            userAdapter.notifyDataSetChanged();
+                        }
                     }
                 }
-            });
+    });
 }

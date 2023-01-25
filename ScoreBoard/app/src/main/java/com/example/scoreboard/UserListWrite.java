@@ -1,6 +1,5 @@
 package com.example.scoreboard;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class UserListWrite extends AppCompatActivity {
 
+    EditText u_id_write;
     EditText u_name_write;
     EditText u_birth_write;
     EditText u_gender_write;
@@ -21,6 +21,7 @@ public class UserListWrite extends AppCompatActivity {
         setContentView(R.layout.activity_user_list_write);
 
         //editText findID
+        //u_id_write = (EditText) findViewById(R.id.u_id_write);
         u_name_write = (EditText) findViewById(R.id.u_name_write);
         u_birth_write = (EditText) findViewById(R.id.u_birth_write);
         u_gender_write = (EditText) findViewById(R.id.u_gender_write);
@@ -30,14 +31,13 @@ public class UserListWrite extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent addIntent = new Intent(getApplicationContext(), UserList.class);
+                Intent addIntent = new Intent();
 
                 addIntent.putExtra("user_name", u_name_write.getText().toString());
                 addIntent.putExtra("user_birth", u_birth_write.getText().toString());
                 addIntent.putExtra("user_gender", u_gender_write.getText().toString());
 
-                addIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                setResult(Activity.RESULT_OK, addIntent);
+                setResult(RESULT_OK, addIntent);
                 //startActivity(addIntent);
                 finish();
             }
