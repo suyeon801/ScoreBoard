@@ -13,7 +13,7 @@
         android:layout_marginRight="10dp">
 
         <TextView
-            android:id="@+id/user_id"
+            android:id="@+id/u_id"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
@@ -24,9 +24,9 @@
             android:textSize="20dp"/>
 
         <TextView
+            android:id="@+id/u_name"
             android:padding="5dp"
             android:layout_margin="5dp"
-            android:id="@+id/user_name"
             android:layout_width="210dp"
             android:layout_height="match_parent"
             android:text="    Player Name"
@@ -36,7 +36,7 @@
             android:background="@drawable/gray_rec_30"/>
 
         <TextView
-            android:id="@+id/user_age"
+            android:id="@+id/u_birth"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/user_gender"
+            android:id="@+id/u_gender"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
