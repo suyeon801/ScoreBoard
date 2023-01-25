@@ -33,6 +33,11 @@ public class UserList extends AppCompatActivity {
         UserAdapter userAdapter = new UserAdapter(getApplicationContext());
 
         //데이터 설정
-        userAdapter.addItem(new UserItem(1, "김수연", 20001108, "Female"));
+        userAdapter.addItem(new UserItem("#1", "김수연", "2000-11-08", "Female"));
+        userAdapter.addItem(new UserItem("#2", "000", "2000-11-08", "Male"));
+        userAdapter.addItem(new UserItem("#3", "111", "2000-11-08", "Male"));
+        userAdapter.addItem(new UserItem("#4", "222", "2000-11-08", "Female"));
+
+        recyclerView.setAdapter(userAdapter);
     }
 }

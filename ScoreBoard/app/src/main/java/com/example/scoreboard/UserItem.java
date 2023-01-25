@@ -3,23 +3,23 @@ package com.example.scoreboard;
 public class UserItem {
 
     //멤버변수 선언
-    int userId;
+    String userId;
     String userName;
-    int userBirth;
+    String userBirth;
     String userGender;
 
-    public UserItem(int userId, String userName, int userBirth, String userGender) {
+    public UserItem(String userId, String userName, String userBirth, String userGender) {
         this.userId = userId;
         this.userName = userName;
         this.userBirth = userBirth;
         this.userGender = userGender;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -31,11 +31,11 @@ public class UserItem {
         this.userName = userName;
     }
 
-    public int getUserBirth() {
+    public String getUserBirth() {
         return userBirth;
     }
 
-    public void setUserBirth(int userBirth) {
+    public void setUserBirth(String userBirth) {
         this.userBirth = userBirth;
     }
 

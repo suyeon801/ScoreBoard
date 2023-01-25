@@ -62,9 +62,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             super(itemView);
 
             textId = (TextView) itemView.findViewById(R.id.u_id);
-            textName = (TextView) itemView.findViewById(R.id.u_id);
-            textBirth = (TextView) itemView.findViewById(R.id.u_id);
-            textGender = (TextView) itemView.findViewById(R.id.u_id);
+            textName = (TextView) itemView.findViewById(R.id.u_name);
+            textBirth = (TextView) itemView.findViewById(R.id.u_birth);
+            textGender = (TextView) itemView.findViewById(R.id.u_gender);
         }
 
         //UserItem 객체를 전달받아 ViewHolder 안에 있는 View에 데이터 설정하는 역할
