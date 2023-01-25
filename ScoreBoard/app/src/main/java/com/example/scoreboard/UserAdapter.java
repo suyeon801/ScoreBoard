@@ -58,7 +58,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         TextView textBirth;
         TextView textGender;
 
-        public ViewHolder(@NonNull View itemView, TextView textId, TextView textName, TextView textBirth, TextView textGender) {
+        public ViewHolder(View itemView) {
             super(itemView);
 
             textId = (TextView) itemView.findViewById(R.id.u_id);
