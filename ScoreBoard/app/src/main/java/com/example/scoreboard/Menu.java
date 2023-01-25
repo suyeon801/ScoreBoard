@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class Menu extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -17,6 +19,8 @@ public class Menu extends AppCompatActivity {
 
     EditText newGame;
     Button addButton;
+
+    ArrayList<GameItem> gameItemArrayList = new ArrayList<GameItem>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +45,13 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        //createDate();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_GameList);
         //recyclerView LayoutManager
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
-        adapter = new GameAdapter(getApplicationContext());
+        adapter = new GameAdapter(gameItemArrayList);
 
         adapter.addItem(new GameItem("Baseball"));
         adapter.addItem(new GameItem("Soccer"));
@@ -66,5 +71,13 @@ public class Menu extends AppCompatActivity {
                 adapter.notifyDataSetChanged();
             }
         });
+    }
+
+    //샘플 데이터 생성
+    public void createDate(){
+        for(int i=0; i<5; i++){
+            GameItem gameItem = new GameItem("name"+i);
+            gameItemArrayList.add(gameItem);
+        }
     }
 }

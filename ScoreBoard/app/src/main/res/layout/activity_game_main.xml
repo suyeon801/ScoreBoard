@@ -76,7 +76,9 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
 
+    <!-- GameName -->
     <TextView
+        android:id="@+id/detail_game_name"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -86,6 +88,7 @@
         android:textColor="@color/white"
         android:gravity="center"/>
 
+    <!-- GameIcon -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -111,6 +114,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
+
+    <!-- GameRank -->
     <LinearLayout
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"

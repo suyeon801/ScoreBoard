@@ -3,7 +3,7 @@ package com.example.scoreboard;
 public class GameItem {
 
     //멤버변수 선언
-    String name;
+    String name; //GameName
 
     public GameItem(String name) {
         this.name = name;
