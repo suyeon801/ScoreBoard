@@ -5,65 +5,21 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:orientation="horizontal">
-        <View
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"/>
-        <View
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"/>
-        <View
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
-        <View
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"/>
 
-        <TextView
-            android:paddingLeft="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Score"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="#FFA7A7"
-            android:gravity="center"
-            android:background="@drawable/scoreboard"/>
-        <TextView
+        <Button
+            android:id="@+id/scoreBoardButton"
             android:paddingRight="60dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Board"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="#B2CCFF"
             android:gravity="center"
-            android:background="@drawable/scoreboard_right"/>
+            android:background="@drawable/scoreboardbutton"/>
 
         <View
             android:layout_width="50dp"
@@ -72,7 +28,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">

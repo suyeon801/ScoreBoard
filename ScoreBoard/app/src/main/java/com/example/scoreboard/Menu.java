@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Menu extends AppCompatActivity {
+
+    Button scoreBoard;
 
     RecyclerView recyclerView;
     GameAdapter adapter;
@@ -69,6 +72,16 @@ public class Menu extends AppCompatActivity {
 
                 adapter.addItem(new GameItem(name));
                 adapter.notifyDataSetChanged();
+            }
+        });
+
+        //ScoreBoardWrite 페이지로 이동
+        scoreBoard = (Button) findViewById(R.id.scoreBoardButton);
+        scoreBoard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent scoreBoardIntent = new Intent(getApplicationContext(), ScoreBoardWrite.class);
+                startActivity(scoreBoardIntent);
             }
         });
     }
