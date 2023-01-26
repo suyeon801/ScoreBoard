@@ -74,9 +74,9 @@ public class ScoreAdapter extends RecyclerView.Adapter<ScoreAdapter.ViewHolder> 
         public void setItem(ScoreItem item){
             textDate.setText(item.getDate());
             textUserA.setText(item.getUserA());
-            textScoreA.setText(item.getScoreA());
-            textScoreB.setText(item.getUserB());
-            textScoreB.setText(item.getScoreB());
+            textScoreA.setText(String.valueOf(item.getScoreA()));
+            textUserB.setText(item.getUserB());
+            textScoreB.setText(String.valueOf(item.getScoreB()));
         }
     }
 }

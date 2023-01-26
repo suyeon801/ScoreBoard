@@ -14,8 +14,6 @@ import java.util.ArrayList;
 
 public class Menu extends AppCompatActivity {
 
-    Button scoreBoard;
-
     RecyclerView recyclerView;
     GameAdapter adapter;
 
@@ -28,6 +26,16 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        //ScoreBoard 페이지로 이동
+        Button scoreBoard = (Button) findViewById(R.id.scoreBoardButton);
+        scoreBoard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent scoreIntent = new Intent(getApplicationContext(), ScoreBoard.class);
+                startActivity(scoreIntent);
+            }
+        });
 
         Button userList = (Button) findViewById(R.id.user_list);
         userList.setOnClickListener(new View.OnClickListener() {
@@ -71,16 +79,6 @@ public class Menu extends AppCompatActivity {
 
                 adapter.addItem(new GameItem(name));
                 adapter.notifyDataSetChanged();
-            }
-        });
-
-        //ScoreBoardWrite 페이지로 이동
-        scoreBoard = (Button) findViewById(R.id.scoreBoardButton);
-        scoreBoard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent scoreBoardIntent = new Intent(getApplicationContext(), ScoreBoard.class);
-                startActivity(scoreBoardIntent);
             }
         });
     }

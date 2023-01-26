@@ -41,7 +41,7 @@ public class ScoreBoard extends AppCompatActivity {
         scoreAdapter = new ScoreAdapter(getApplicationContext());
 
         //데이터 설정
-        scoreAdapter.addItem(new ScoreItem("1/26", "김수연", 10, "장지인", 5));
+        scoreAdapter.addItem(new ScoreItem("2023-01-26", "A", 10, "B", 5));
         recyclerView.setAdapter(scoreAdapter);
 
     }
