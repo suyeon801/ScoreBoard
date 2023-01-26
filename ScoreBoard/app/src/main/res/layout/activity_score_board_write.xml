@@ -9,23 +9,39 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
 
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/brown_rec">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@drawable/crown"
+            android:backgroundTint="@color/black"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+
+
     <TextView
         android:id="@+id/gameSpinnerResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/brown_rec"
-        android:drawableLeft="@drawable/crown"
-        android:drawableTint="@color/black"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="  Score Board Write"
+
+        android:paddingLeft="10dp"
+        android:text="Score Board Write"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="left"/>
+
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
@@ -49,6 +65,7 @@
             android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/date_w"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -66,6 +83,7 @@
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/uA_id_w"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
                 android:layout_width="130dp"
@@ -78,6 +96,7 @@
                 android:background="@drawable/yellow_rec"/>
 
             <EditText
+                android:id="@+id/uB_id_w"
                 android:layout_marginRight="20dp"
                 android:padding="10dp"
                 android:layout_width="130dp"
@@ -97,6 +116,7 @@
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/uA_score_w"
                 android:layout_marginLeft="20dp"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
@@ -109,6 +129,7 @@
                 android:backgroundTint="@color/dark_yellow"/>
 
             <EditText
+                android:id="@+id/uB_score_w"
                 android:layout_marginRight="20dp"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
@@ -125,6 +146,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/scoreAddButton"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="20dp"
         android:layout_width="100dp"
