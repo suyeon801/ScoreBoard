@@ -51,8 +51,6 @@ public class ScoreBoardWrite extends AppCompatActivity {
             }
         });
 
-
-
         //add score
         dateW = (EditText) findViewById(R.id.date_w);
         uAIdW = (EditText) findViewById(R.id.uA_id_w);
@@ -63,17 +61,16 @@ public class ScoreBoardWrite extends AppCompatActivity {
         Button addButton = (Button) findViewById(R.id.scoreAddButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent addIntent = new Intent();
 
                 addIntent.putExtra("score_date", dateW.getText().toString());
                 addIntent.putExtra("score_uA_id", uAIdW.getText().toString());
                 addIntent.putExtra("score_uB_id", uBIdW.getText().toString());
-                addIntent.putExtra("score_uA", uAScoreW.getText().toString());
-                addIntent.putExtra("score_uB", uBScoreW.getText().toString());
+                addIntent.putExtra("score_uA", Integer.parseInt(uAScoreW.getText().toString().trim()));
+                addIntent.putExtra("score_uB", Integer.parseInt(uBScoreW.getText().toString().trim()));
 
                 setResult(RESULT_OK, addIntent);
-                //startActivity(addIntent);
                 finish();
             }
         });

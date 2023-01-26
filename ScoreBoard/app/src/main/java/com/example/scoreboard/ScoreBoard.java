@@ -24,6 +24,16 @@ public class ScoreBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_board);
 
+        //add score button
+        addButton = (Button) findViewById(R.id.addScore);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent addIntent = new Intent(getApplicationContext(), ScoreBoardWrite.class);
+                startActivityResult.launch(addIntent);
+            }
+        });
+
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewScore);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
@@ -34,15 +44,6 @@ public class ScoreBoard extends AppCompatActivity {
         scoreAdapter.addItem(new ScoreItem("1/26", "김수연", 10, "장지인", 5));
         recyclerView.setAdapter(scoreAdapter);
 
-        //add score button
-        addButton = (Button) findViewById(R.id.scoreAddButton);
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent addIntent = new Intent(getApplicationContext(), ScoreBoardWrite.class);
-                startActivityResult.launch(addIntent);
-            }
-        });
     }
 
     //Score 값 받기
@@ -56,6 +57,7 @@ public class ScoreBoard extends AppCompatActivity {
                         if (result != null) {
                             Intent intent = result.getData();
 
+                            assert intent != null;
                             String dateW = intent.getStringExtra("score_date");
                             String uAIdW = intent.getStringExtra("score_uA_id");
                             String uBIdW = intent.getStringExtra("score_uB_id");
@@ -69,5 +71,5 @@ public class ScoreBoard extends AppCompatActivity {
                         }
                     }
                 }
-            });
+    });
 }

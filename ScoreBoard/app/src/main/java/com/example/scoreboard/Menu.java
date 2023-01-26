@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -80,7 +79,7 @@ public class Menu extends AppCompatActivity {
         scoreBoard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent scoreBoardIntent = new Intent(getApplicationContext(), ScoreBoardWrite.class);
+                Intent scoreBoardIntent = new Intent(getApplicationContext(), ScoreBoard.class);
                 startActivity(scoreBoardIntent);
             }
         });
