@@ -48,8 +48,21 @@
         android:background="@drawable/brow_rec_20">
 
 
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ranking">
 
+        </LinearLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="25dp"
+            android:id="@+id/recyclerView_totalRank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
