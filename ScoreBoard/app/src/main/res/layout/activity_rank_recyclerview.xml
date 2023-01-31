@@ -13,11 +13,20 @@
         android:layout_marginRight="5dp">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="#"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:gravity="center"/>
+
+        <TextView
             android:id="@+id/total_id"
             android:padding="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="#4"
+            android:text="4"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="13dp"

@@ -65,9 +65,9 @@ public class TotalAdapter extends RecyclerView.Adapter<TotalAdapter.ViewHolder> 
 
         //TotalItem 객체를 전달받아 ViewHolder 안에 있는 View에  데이터 설정하는 역할
         public void setItem(TotalItem item){
-            textId.setText(item.getTotalId());
+            textId.setText(String.valueOf(item.getTotalId()));
             textName.setText(item.getTotalName());
-            textScore.setText(item.getTotalScore());
+            textScore.setText(String.valueOf(item.getTotalScore()));
         }
     }
 }
