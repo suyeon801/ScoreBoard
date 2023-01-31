@@ -3,12 +3,12 @@ package com.example.scoreboard;
 public class TotalItem {
 
     //멤버변수 선언
-    int totalId;
-    String totalName;
-    String totalScore;
+    int totalId; //Id 
+    String totalName; //이름(u_name)
+    int totalScore; //승리횟수(v_count)
 
     //생성자
-    public TotalItem(int totalId, String totalName, String totalScore) {
+    public TotalItem(int totalId, String totalName, int totalScore) {
         this.totalId = totalId;
         this.totalName = totalName;
         this.totalScore = totalScore;
@@ -32,11 +32,11 @@ public class TotalItem {
         this.totalName = totalName;
     }
 
-    public String getTotalScore() {
+    public int getTotalScore() {
         return totalScore;
     }
 
-    public void setTotalScore(String totalScore) {
+    public void setTotalScore(int totalScore) {
         this.totalScore = totalScore;
     }
 }
