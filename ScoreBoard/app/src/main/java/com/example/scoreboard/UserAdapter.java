@@ -74,6 +74,5 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             textBirth.setText(item.getUserBirth());
             textGender.setText(item.getUserGender());
         }
-
     }
 }
