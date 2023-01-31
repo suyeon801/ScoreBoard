@@ -54,8 +54,47 @@
             android:layout_marginRight="25dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
+            android:orientation="vertical"
             android:background="@drawable/ranking">
 
+            <TextView
+                android:id="@+id/gold_name"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="112dp"
+                android:layout_marginTop="65dp"
+                android:gravity="center"
+                android:text="A player"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/silver_name"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:text="B player"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/bronze_name"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:text="C player"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginLeft="65dp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
 
         </LinearLayout>
