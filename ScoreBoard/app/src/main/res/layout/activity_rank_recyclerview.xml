@@ -34,14 +34,14 @@
 
         <TextView
             android:id="@+id/total_name"
-            android:paddingRight="5dp"
+            android:paddingRight="20dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:paddingLeft="15dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="130dp"
+            android:layout_width="200dp"
             android:layout_height="match_parent"
             android:text="Player Name"
             android:textStyle="bold"
